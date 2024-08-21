@@ -6,19 +6,19 @@ import { Button } from "../ui/button";
 import { FormFieldBuilder } from "../form-builder/form-field";
 import { IFormSections } from "../form-builder/form-builer.interface";
 
-interface IProps {
+interface IProps<Schema> {
   onSubmit?: <T>(data: T) => void;
   buttonText?: string;
-  formConfig?: IFormSections<any>;
+  formConfig?: IFormSections<Schema>;
   children?: React.ReactNode;
 }
 
-export const FormBuilderNative = ({
+export function FormBuilderNative<Schema>({
   children,
   onSubmit,
   formConfig,
   buttonText,
-}: IProps) => {
+}: IProps<Schema>) {
   const { form, sections } = formConfig;
 
   return (
@@ -63,4 +63,4 @@ export const FormBuilderNative = ({
       </form>
     </Form>
   );
-};
+}
