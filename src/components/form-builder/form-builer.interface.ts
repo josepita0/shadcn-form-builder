@@ -17,7 +17,11 @@ interface IInput<T> {
 
 interface ISections<T> {
   title?: string;
-  gridColumns: number;
+  gridColumns?: number;
+  addButton?: {
+    title: string;
+    onClick: () => void;
+  };
   fields: {
     label: string;
     Field: React.ElementType;
