@@ -1,7 +1,7 @@
 {
   "name": "form-builder-react-shadcn",
   "private": false,
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Form builder for react apps using the shadcn ui library",
   "type": "module",
   "main": "dist/index.umd.js",
