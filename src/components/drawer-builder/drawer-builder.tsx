@@ -10,7 +10,7 @@ import {
   DrawerTitle,
 } from "../ui/drawer";
 
-import { cn, Show } from "../../lib/utils";
+import { cn } from "../../lib/utils";
 import { useDesktop } from "../../lib/hooks/useMediaQuery";
 import { useDrawerStore } from "../../lib/stores/useDrawerStore";
 

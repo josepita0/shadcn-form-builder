@@ -1,26 +1,24 @@
 {
   "name": "form-builder-react-shadcn",
   "private": false,
-  "version": "0.0.10",
+  "version": "0.0.19",
   "description": "Form builder for react apps using the shadcn ui library",
   "type": "module",
-  "main": "dist/index.umd.js",
-  "module": "dist/index.es.js",
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
   "repository": {
     "type": "git",
     "directory": "https://github.com/josepita0/shadcn-form-builder"
   },
   "exports": {
-    ".": {
-      "import": "./dist/index.es.js",
-      "require": "./dist/index.umd.js",
-      "types": "./dist/index.d.ts"
-    }
+    "./components": "./dist/components/index.js",
+    "./utils": "./dist/lib/utils/index.js",
+    "./hooks": "./dist/lib/hooks/index.js",
+    "./stores": "./dist/lib/stores/index.js"
   },
-  "files": [
-    "/dist"
-  ],
   "publishConfig": {
     "access": "public"
   },
@@ -44,6 +42,7 @@
     "@tabler/icons-react": "^3.12.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "form-builder-react-shadcn": "^0.0.16",
     "lucide-react": "^0.429.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
