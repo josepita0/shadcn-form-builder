@@ -1,3 +1,5 @@
+"use client";
+
 import { IconSquareX } from "@tabler/icons-react";
 import {
   DrawerClose,

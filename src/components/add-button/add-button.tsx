@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "../ui/button";
 
 import { IconCirclePlus } from "@tabler/icons-react";

@@ -1,3 +1,5 @@
+"use client";
+
 import { cn } from "../../lib/utils";
 
 import { Show } from "../../lib/utils";
@@ -24,9 +26,11 @@ export function FormBuilderNative<Schema>({
   children,
   onSubmit,
   formConfig,
-  buttonConfig,
+  buttonConfig = {
+    buttonText: "Crear",
+  },
 }: IProps<Schema>) {
-  const { buttonText = "Crear" } = buttonConfig;
+  const { buttonText } = buttonConfig;
 
   const { form, sections } = formConfig;
 
