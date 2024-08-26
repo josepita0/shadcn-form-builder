@@ -8,11 +8,11 @@ import {
   DrawerHeader,
   Drawer,
   DrawerTitle,
-} from "../ui/drawer";
+} from "../../ui/drawer";
 
-import { cn } from "../../lib/utils";
-import { useDesktop } from "../../lib/hooks/useMediaQuery";
-import { useDrawerStore } from "../../lib/stores/useDrawerStore";
+import { cn } from "../../../lib/utils";
+import { useDesktop } from "../../../lib/hooks/useMediaQuery";
+import { useDrawerStore } from "../../../lib/stores/useDrawerStore";
 
 interface IProps {
   width?: string;

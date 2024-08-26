@@ -1,5 +1,5 @@
 import "./App.css";
-import { DrawerBuilder } from "./components/drawer-builder/drawer-builder";
+import { DrawerBuilder } from "./components/builder/drawer-builder/drawer-builder";
 
 function App() {
   // const [count, setCount] = useState(0);
