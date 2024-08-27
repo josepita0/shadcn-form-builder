@@ -20,13 +20,15 @@ interface IProps {
   children?: React.ReactNode;
 }
 
+export const baseClass =
+  "sm:w-[500px] sm:h-screen sm:top-0 sm:right-0 left-auto mt-0 rounded-none dark:bg-black";
+
 export const DrawerBuilder = ({
   onClose,
   children,
   width = "sm:w-[500px]",
 }: IProps) => {
   const { toggleDrawer, dataDrawer, isOpen } = useDrawerStore();
-  console.log("hola");
 
   const isDesktop = useDesktop();
 
@@ -36,12 +38,7 @@ export const DrawerBuilder = ({
       dismissible={false}
       open={isOpen}
     >
-      <DrawerContent
-        className={cn(
-          "sm:h-screen sm:top-0 sm:right-0 left-auto mt-0 rounded-none dark:bg-black bg-background w-full",
-          width
-        )}
-      >
+      <DrawerContent className={width}>
         <div className="mx-auto w-full pt-0 p-4">
           <DrawerHeader>
             <div className="flex flex-col justify-end items-end">

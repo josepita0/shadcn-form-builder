@@ -1,16 +1,14 @@
 import "./App.css";
-import { DrawerBuilder } from "./components/builder/drawer-builder/drawer-builder";
+import { useList } from "./lib/services";
 
 function App() {
   // const [count, setCount] = useState(0);
 
-  return (
-    <>
-      <DrawerBuilder>
-        <div></div>{" "}
-      </DrawerBuilder>
-    </>
-  );
+  const { data } = useList(`character`);
+
+  console.log({ data });
+
+  return <>hola</>;
 }
 
 export default App;

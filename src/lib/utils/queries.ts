@@ -35,6 +35,20 @@ export const defaultPageQueries: IGetAllPageQueries = {
   limit: 5,
 };
 
+interface IGenRouteUrl {
+  url: string;
+  id?: string;
+  optionalRoute?: string;
+}
+
+export const genRouteUrl = (props: IGenRouteUrl) => {
+  const { url, id, optionalRoute } = props;
+
+  return `${url}${id ? `/${id}` : ""}${
+    optionalRoute ? `/${optionalRoute}` : ""
+  }`;
+};
+
 export const genQueriesUrl = (url: string, q: PageQueries) => {
   let queryUrl = `${url}?paginate={"skip":${
     q.skip || defaultPageQueries.skip
