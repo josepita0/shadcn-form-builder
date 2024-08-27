@@ -4,8 +4,8 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "../ui/form";
-import { cn } from "../../lib/utils";
+} from "../../ui/form";
+import { cn } from "../../../lib/utils";
 import { UseFormReturn } from "react-hook-form";
 
 interface IProps {

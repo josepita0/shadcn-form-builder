@@ -1,4 +1,4 @@
 "use client";
 
-export * from "./form-builder/";
-export * from "./drawer-builder/";
+export * from "./builder";
+export * from "./dropdown-table";

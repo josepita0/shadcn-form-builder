@@ -1,12 +1,12 @@
 "use client";
 
-import { cn } from "../../lib/utils";
+import { cn } from "../../../lib/utils";
 
-import { Show } from "../../lib/utils";
+import { Show } from "../../../lib/utils";
 import { Separator } from "@radix-ui/react-separator";
-import { Form, Button, Card, CardTitle } from "../ui";
+import { Form, Button, Card, CardTitle } from "../../ui";
 
-import { AddButton } from "../add-button";
+import { AddButton } from "../../add-button";
 import { FormFieldBuilder } from "../form-builder/form-field";
 import { IFormSections } from "../form-builder/form-builer.interface";
 

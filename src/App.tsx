@@ -1,19 +1,14 @@
 import "./App.css";
-import { DrawerBuilder } from "./components/drawer-builder/drawer-builder";
-import { useDrawerStore } from "./lib/stores/useDrawerStore";
+import { useList } from "./lib/services";
 
 function App() {
   // const [count, setCount] = useState(0);
 
-  const { toggleDrawer } = useDrawerStore();
+  const { data } = useList(`character`);
 
-  return (
-    <>
-      <DrawerBuilder>
-        <div></div>{" "}
-      </DrawerBuilder>
-    </>
-  );
+  console.log({ data });
+
+  return <>hola</>;
 }
 
 export default App;

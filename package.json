@@ -1,26 +1,26 @@
 {
   "name": "form-builder-react-shadcn",
   "private": false,
-  "version": "0.0.10",
+  "version": "0.0.41",
   "description": "Form builder for react apps using the shadcn ui library",
   "type": "module",
-  "main": "dist/index.umd.js",
-  "module": "dist/index.es.js",
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
   "repository": {
     "type": "git",
     "directory": "https://github.com/josepita0/shadcn-form-builder"
   },
   "exports": {
-    ".": {
-      "import": "./dist/index.es.js",
-      "require": "./dist/index.umd.js",
-      "types": "./dist/index.d.ts"
-    }
+    "./components": "./dist/components/index.js",
+    "./providers": "./dist/lib/providers/index.js",
+    "./utils": "./dist/lib/utils/index.js",
+    "./hooks": "./dist/lib/hooks/index.js",
+    "./stores": "./dist/lib/stores/index.js",
+    "./services": "./dist/lib/services/index.js"
   },
-  "files": [
-    "/dist"
-  ],
   "publishConfig": {
     "access": "public"
   },
@@ -36,23 +36,35 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@custom-react-hooks/use-media-query": "^1.5.1",
     "@hookform/resolvers": "^3.9.0",
+    "@radix-ui/react-avatar": "^1.1.0",
     "@radix-ui/react-dialog": "^1.1.1",
     "@radix-ui/react-label": "^2.1.0",
+    "@radix-ui/react-menubar": "^1.1.1",
     "@radix-ui/react-separator": "^1.1.0",
     "@radix-ui/react-slot": "^1.1.0",
+    "@radix-ui/react-tooltip": "^1.1.2",
     "@tabler/icons-react": "^3.12.0",
+    "@tanstack/react-query": "^5.52.1",
+    "axios": "^1.7.5",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "d4t-ui-demo": "^1.16.12",
+    "form-builder-react-shadcn": "^0.0.16",
     "lucide-react": "^0.429.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-hook-form": "^7.52.2",
-    "tailwind-merge": "^2.5.2",
+    "react": "18.2.0",
+    "react-day-picker": "^8.9.1",
+    "react-dom": "18.2.0",
+    "react-hook-form": "7.51.3",
+    "tailwind-merge": "^1.14.0",
+    "tailwindcss": "3.3.3",
     "tailwindcss-animate": "^1.0.7",
+    "toast": "^0.5.4",
+    "typescript-cookie": "^1.0.6",
     "vaul": "^0.9.1",
-    "zod": "^3.23.8",
-    "zustand": "^4.5.5"
+    "zod": "3.21.4",
+    "zustand": "^4.4.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",
@@ -65,8 +77,8 @@
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
     "eslint-plugin-react-refresh": "^0.4.9",
     "globals": "^15.9.0",
-    "postcss": "^8.4.41",
-    "tailwindcss": "^3.4.10",
+    "postcss": "8.4.29",
+    "tailwindcss": "3.3.3",
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.1",
     "vite": "^5.4.1",
